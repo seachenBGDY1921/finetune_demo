@@ -165,7 +165,7 @@ class FinetuningConfig(object):
     max_output_length: int
 
     training_args: Seq2SeqTrainingArguments = dc.field(
-        default_factory=lambda: Seq2SeqTrainingArguments(output_dir='./output')
+        default_factory=lambda: Seq2SeqTrainingArguments(output_dir='/kaggle/working/output')
     )
     peft_config: Optional[PeftConfig] = None
 
